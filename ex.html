@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Process</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        #work-process {
+            position: relative;
+    background-image: url('./img/about-2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply; 
+        }
+        
+        .background-overlay {
+            padding: 50px;
+            border-radius: 10px;
+        }
+        
+        .section-heading {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .process-steps {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .step {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .step:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .step-number {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ffd700; /* Golden color for numbers */
+        }
+        
+        .step-heading {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .step-content {
+            font-size: 16px;
+            line-height: 1.5;
+        }        
+    </style>
+</head>
+<body>
+    <section id="work-process">
+        <div class="background-overlay">
+            <h2 class="section-heading">Our Work Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-heading">Plan</h3>
+                    <p class="step-content">We strategize and create a roadmap to ensure project success.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-heading">Execute</h3>
+                    <p class="step-content">Our team brings the plan to life with precision and efficiency.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-heading">Deliver</h3>
+                    <p class="step-content">We deliver quality results that meet and exceed expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+window.addEventListener('scroll', () => {
+    const steps = document.querySelectorAll('.step');
+    steps.forEach(step => {
+        const rect = step.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+            step.style.boxShadow = "0 10px 30px rgba(255, 255, 255, 0.5)";
+        } else {
+            step.style.boxShadow = "none";
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
