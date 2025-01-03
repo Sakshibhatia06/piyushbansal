@@ -534,8 +534,8 @@ body{
       flex-direction: column;
     }
     .margin{
-        margin-top: 60px;
-        margin-left: 80px;
+        margin-top: 50px;
+        margin-left: 0px;
     }
 
     .about-image {
