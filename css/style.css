@@ -439,11 +439,17 @@ body{
     overflow: hidden;
   }
 
+ .margin{
+    margin-top: 60px;
+    margin-left: 80px;
+}
   .about-image {
-    height: 700px;
+    height: 550px;
     width: 300px;
+    margin-left: 50px;
+    border-radius: 10px;
     flex: 1;
-    background: url('../img/profile.png') center/cover no-repeat;
+    background: url('../img/profile2.JPG') center/cover no-repeat;
     animation: slideInLeft 1s ease;
   }
 
