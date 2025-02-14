@@ -33,7 +33,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+<body>
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -42,58 +42,53 @@
         </div>
     </div>
     <!-- Spinner End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
-        data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="text-primary fw-bold m-0">Piyush Bansal</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-            </div>
-            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
-                <h1 class="text-primary fw-bold m-0">Piyush Bansal</h1>
-            </a>
-            <div class="navbar-nav me-auto py-0">
-                <a href="#project" class="nav-item nav-link">Achievements</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
+     <nav class="navbar1">
+        <a href="#" class="logo">Piyush Bansal</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </nav>
-    <!-- Navbar End -->
+        <ul class="nav-list">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#awards">Achievements</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+     </nav>
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-light my-6 mt-0" id="home">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h3 class="text-primary mb-3">I'm</h3>
-                    <h1 class="display-3 mb-3">Piyush Bansal</h1>
-                    <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Architect, Entrepreneur, Mentor, Visionary</div>
-                    <div class="d-flex align-items-center pt-5">
-                        <a href="#contact" class="btn btn-primary py-3 px-4 me-5">Contact Us</a>
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
+    <section class="home">
+        <div class="container-fluid bg-light my-6 mt-0" id="home">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <img class="img-fluid" src="./img/profile1.JPG" alt="">
                     </div>
-                </div>
-                <div class="col-lg-5 margin">
-                    <img class="img-fluid" src="./img/profile1.JPG" alt="">
+                    <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                        <h3 class="mb-3">HI, I'm  Piyush Bansal</h3>
+                        <h2 class="text-primary typed-text-output d-inline"></h2>
+                        <div class="typed-text d-none">Architect, Entrepreneur, Mentor, Visionary</div>
+                        <p class="mt-2">As a mentor, Piyush has inspired countless individuals, sharing his insights and
+                            empowering others to
+                            excel in their fields. His journey is a source of inspiration for aspiring entrepreneurs and
+                            seasoned
+                            professionals alike.</p>
+                        <div class="d-flex align-items-center pt-5">
+                            <a href="#contact" class="btn btn-primary py-3 px-4 me-5">Contact Us</a>
+                            <button type="button" class="btn-play" data-bs-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                                <span></span>
+                            </button>
+                            <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Header End -->
 
 
@@ -126,40 +121,35 @@
         </div>
         <div class="about-content">
             <h2>About Us</h2>
-            <p>Piyush Bansal is the co-founder of <strong style="color:#6244C5">Lykans Realty</strong>, a groundbreaking
-                force in Dubai's real estate market.
-                With an educational foundation in architecture and an entrepreneurial spirit, he has seamlessly blended
-                creativity, strategy, and innovation to transform dreams into <br> reality.<br>
-
-                In just 9 months, under Piyush's leadership, Lykans Realty has achieved unparalleled success. The
-                company has become the <strong> No. 1 seller</strong> of DAMAC properties, a remarkable achievement that
-                showcases
-                Piyush’s dedication to excellence and client satisfaction. Recognized by DAMAC Developers and featured
-                in the prestigious <strong>Khaleej Times </strong> as one of Dubai’s top 50 fastest-growing companies,
-                Lykans Realty is a
-                testament to his relentless drive and strategic vision.
+            <p>
+                A visionary entrepreneur reshaping Dubai’s real estate and finance industries,<strong
+                    style="color: #6244C5;"> Piyush Bansal
+                </strong> combines
+                architectural expertise with business acumen to drive innovation and success. His strategic leadership
+                has positioned his ventures among the fastest-growing in the UAE.
             </p>
             <ul>
-                <li>Co-founder of Lykans Realty, a trailblazer in Dubai’s real estate market, blending architecture, strategy, and innovation to achieve excellence.</li>
-                <li>Diversifies his ventures as owner and shareholder of Lykans Finance and Marker Finance, showcasing leadership in both real estate and financial services.</li>
-                <li>A passionate mentor, inspiring aspiring entrepreneurs and professionals with his insights and success journey.</li>
+                <li>Co-founder – Lykans Realty | Dubai’s No.1 Seller of DAMAC Properties.</li>
+                <li>Founder – Lykans Associates | Revolutionizing the Property Sector</li>
+                <li>Co-founder – Marker Finance | Leading Innovation in Financial Services</li>
             </ul>
+            <p>Recognized by DAMAC Developers and featured in <strong style="color: #6244C5;"> Khaleej Times’ </strong>
+                Top 50 Fastest-Growing Companies in Dubai,
+                Piyush’s relentless ambition and expertise continue to set new industry standards. As a mentor and
+                strategist, he inspires the next generation of entrepreneurs to achieve excellence.</p>
         </div>
     </div>
 
 
 
     <!-- About Start -->
-    <div class="container-xxl py-6" id="about">
+    <div class="container-xxl py-4 mt-3" id="about">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">15</h1>
-                            <h5 class="mb-0">Years</h5>
-                        </div>
-                        <h3 class="lh-base mb-0">of working experience as a Mentor & Entrepreneur</h3>
+                    <div class="d-flex align-items-center mb-2">
+
+                        <h1 class="lh-base mb-0">Mentor & Entrepreneur</h1>
                     </div>
                     <p class="mb-4">As a mentor, Piyush has inspired countless individuals, sharing his insights and
                         empowering others to
@@ -167,8 +157,8 @@
                         seasoned
                         professionals alike. <br> Beyond real estate, Piyush’s entrepreneurial endeavors include:
                     </p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Lykans Finance</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i> Marker Finance</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Lykans Associates</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Marker Finance</p>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-3 mb-4">
@@ -179,114 +169,56 @@
                             <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
                         </div>
                     </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">100</h2>
-                    </div>
-                    <p class="mb-4">Our clients are at the heart of everything we do, and their satisfaction speaks
-                        volumes about our commitment.</p>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">10</h2>
-                    </div>
-                    <p class="mb-0">
-                        Each project we complete represents a milestone in delivering quality, innovation, and precision.
-                    </p>
+
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
-    
-
-    <!-- Service Start -->
-    <div class="container-fluid bg-light my-5 py-6" id="project">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 style="font-family: 'Mulish', Sans-serif;" class="display-5 mb-0">Our Achievement</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="ms-sm-4">
-                            <div class="icon-container">
-                                <i class="icon bi bi-building"></i>
-                            </div>
-                            <h4 class="mb-3">Real Estate Leadership</h4>
-                            <h6 class="mb-3"><span class="text-primary">Co-founder of </span></h6>
-                            <span>Lykans Realty, the leading real estate company in Dubai for DAMAC property sales.</span>
-                        </div>
+    <div class="container23" id="awards">
+        <div class="service-wrapper">
+            <div class="service">
+                <h1>Our Achievements</h1>
+                <p style="font-size: 20px;">"Turning Visions into Victories: Our Greatest Achievements"</p>
+                <div class="cards">
+                    <div class="card">
+                        <i class="icon bi bi-building"></i>
+                        <h2>Real Estate Leadership</h2>
+                        <p>Co-founder of Lykans Realty, the leading real estate company in Dubai for DAMAC property sales.</p>
                     </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="ms-sm-4">
-                            <div class="icon-container">
-                                <i class="icon bi bi-bar-chart"></i>
-                            </div>
-                            <h4 class="mb-3">Record-Breaking Growth:</h4>
-                            <h6 class="mb-3"><span class="text-primary">Dubai’s No. 1 </span></h6>
-                            <span>Elevated Lykans Realty to become Dubai’s No. 1 real estate firm in DAMAC property sales within just 9 months.</span>
-                        </div>
+                    <div class="card">
+                        <i class="icon bi bi-bar-chart"></i>
+                        <h2>Record-Breaking Growth</h2>
+                        <p>Dubai’s No. 1 Elevated Lykans Realty to become Dubai’s No. 1 real estate firm in DAMAC property
+                            sales within just 9 months.</p>
                     </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="ms-sm-4">
-                            <div class="icon-container">
-                                <i class="icon bi bi-award"></i>
-                            </div>
-                            <h4 class="mb-3">Industry Recognition:</h4>
-                            <h6 class="mb-3"><span class="text-primary">Khaleej Times</span></h6>
-                            <span>Featured in Khaleej Times as one of Dubai’s top 50 fastest-growing companies.</span>
-                        </div>
+                    <div class="card">
+                        <i class="icon bi bi-award"></i>
+                        <h2>Industry Recognition</h2>
+                        <p>Khaleej Times Featured in Khaleej Times as one of Dubai’s top 50 fastest-growing companies.</p>
                     </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="ms-sm-4">
-                            <div class="icon-container">
-                                <i class="icon bi bi-building"></i>
-                            </div>
-                            <h4 class="mb-3">Financial Ventures: </h4>
-                            <h6 class="mb-3"><span class="text-primary">Owner and shareholder of</span></h6>
-                            <span>Lykans Finance and Marker Finance, driving innovation and trust in financial services.
-                                </span>
-                        </div>
+                    <div class="card">
+                        <i class="icon bi bi-house-door"></i>
+                        <h2>Financial Ventures</h2>
+                        <p>Owner and shareholder of Lykans Finance and Marker Finance, driving innovation and trust in financial services.</p>
                     </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="ms-sm-4">
-                            <div class="icon-container">
-                                <i class="icon fa fa-users"></i>
-                            </div>
-                            <h4 class="mb-3">Mentorship Excellence: </h4>
-                            <h6 class="mb-3"><span class="text-primary">Renowned mentor and coach</span></h6>
-                            <span>Renowned mentor and coach, empowering individuals in the real estate and business sectors.</span>
-                        </div>
+                    <div class="card">
+                        <i class="icon fa fa-users"></i>
+                        <h2>Mentorship Excellence: </h2>
+                        <p>Renowned mentor and coach, empowering individuals in the real estate and business
+                            sectors.</p>
                     </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="ms-sm-4">
-                            <div class="icon-container">
-                                <i class="icon bi bi-house-door"></i>
-                            </div>
-                            <h4 class="mb-3">Architectural Expertise: </h4>
-                            <h6 class="mb-3"><span class="text-primary"> A foundation </span></h6>
-                            <span> A foundation in architecture that fuels his creative approach to real estate development and project design.</span>
-                        </div>
+                    <div class="card">
+                        <i class="icon bi bi-building"></i>
+                        <h2>Architectural Expertise</h2>
+                        <p>A foundation in architecture that fuels his creative approach to real estate
+                            development and project design.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Service End -->
     <section id="work-process" id="project">
         <div class="section-heading">
@@ -314,100 +246,65 @@
             </div>
         </div>
     </section>
-    <div class="slider-container" id="service">
-        <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="col-lg-7">
-                <h1 style="margin-left: 39px;" class="display-5 mb-0">BLOGS</h1>
-                <p class="heading">My Insights & Articles</p>
-            </div>
+
+    <section id="blog">
+        <div class="blog-heading">
+            <span>My Recent Posts</span>
+            <h3>My Blogs</h3>
         </div>
-        <div class="slider">
-            <div class="slide">
-                <img src="./img/profile1.JPG" alt="Web Development">
-                <h3>The Architectural Visionary Behind Dubai’s Real Estate Success: Piyush Bansal</h3>
-                <p>Explore Piyush Bansal’s journey from his architectural roots to leading Lykans Realty to become Dubai’s No. 1 seller of DAMAC properties.
-                </p>
-                <ul style="text-align: left;">
-                    <li>His unique approach to blending architecture, strategy, and innovation.</li>
-                    <li> The rapid rise of Lykans Realty under his leadership.</li>
-                    <li>The importance of architectural expertise in real estate success.</li>
-                </ul>
-                <div class="align">
+        <div class="blog-container">
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./img/profile1.JPG" alt="blog">
+                </div>
+                <div class="blog-text">
+                    <span>The Architectural Visionary Behind Dubai’s Real Estate Success: Piyush Bansal</span>
+                    <a href="#" class="blog-title">Explore Piyush Bansal’s journey from his architectural roots to
+                        leading Lykans Realty to become
+                        Dubai’s No. 1 seller of DAMAC properties.</a>
+                    <p>
+                        His unique approach to blending architecture, strategy, and innovation.
+                        The rapid rise of Lykans Realty under his leadership.
+                        The importance of architectural expertise in real estate success.
+                    </p>
                     <a href="#">Read More</a>
                 </div>
             </div>
-            <div class="slide">
-                <img src="./img/profile1.JPG" alt="UI/UX Design">
-                <h3>Lykans Realty: Redefining Dubai’s Real Estate Landscape in Record Time</h3>
-                <p>Highlight the success story of Lykans Realty, focusing on how it became a leader in Dubai’s competitive real estate market in just 9 months.</p>
-                <ul style="text-align: left;">
-                    <li>Strategies that made Lykans Realty the No. 1 seller of DAMAC properties.</li>
-                    <li> The recognition by DAMAC Developers and Khaleej Times.</li>
-                    <li> Insights into the company’s customer-first philosophy.</li>
-                </ul>
-                <div class="align">
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./img/profile1.JPG" alt="blog">
+                </div>
+                <div class="blog-text">
+                    <span>Lykans Realty: Redefining Dubai’s Real Estate Landscape in Record <br>Time</span>
+                    <a href="#" class="blog-title">Highlight the success story of Lykans Realty, focusing on how it
+                        became a leader in Dubai’s
+                        competitive real estate market in just 9 months.</a>
+                    <p> Strategies that made Lykans Realty the No. 1 seller of DAMAC properties.
+                        The recognition by DAMAC Developers and Khaleej Times.
+                        Insights into the company’s customer-first philosophy.</p>
                     <a href="#">Read More</a>
                 </div>
             </div>
-            <div class="slide">
-                <img src="./img/profile1.JPG" alt="SEO Optimization">
-                <h3>From Vision to Victory: Lessons from Piyush Bansal’s Entrepreneurial Journey</h3>
-                <p>Provide an inspiring narrative about Piyush’s entrepreneurial journey, offering lessons for aspiring business leaders.</p>
-                <ul style="text-align: left;">
-                    <li>Challenges and successes in building Lykans Realty.</li>
-                    <li> His ventures into finance with Lykans Finance and Marker Finance.</li>
-                    <li> Advice for young entrepreneurs looking to make an impact.</li>
-                </ul>
-                <div class="align">
-                    <a href="#">Read More</a>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./img/profile1.JPG" alt="blog">
                 </div>
-            </div>
-            <div class="slide">
-                <img src="./img/profile1.JPG" alt="Content Writing">
-                <h3>The Power of Diversification: Piyush Bansal’s Foray into Finance</h3>
-                <p>Discuss Piyush’s success in financial services with Lykans Finance and Marker Finance, alongside his real estate achievements.</p>
-                <ul style="text-align: left;">
-                    <li>The importance of diversification in modern business.</li>
-                    <li>How his leadership bridges real estate and financial sectors.</li>
-                    <li>Benefits of having expertise across multiple industries.</li>
-                </ul>
-                <div class="align">
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="./img/profile1.JPG" alt="Digital Marketing">
-                <h3>Mentorship Matters: Piyush Bansal’s Role as an Inspirational Guide</h3>
-                <p>Focus on Piyush’s efforts to mentor and inspire aspiring entrepreneurs and professionals.</p>
-                <ul style="text-align: left;">
-                    <li>Stories of people who have benefited from his guidance.</li>
-                    <li> His philosophy on leadership and mentoring.</li>
-                    <li> Practical advice for those seeking growth in their careers.</li>
-                </ul>
-                <div class="align">
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="./img/profile1.JPG" alt="Consultation">
-                <h3>The Blueprint for Success: How Lykans Realty Revolutionized Dubai Real Estate</h3>
-                <p>Analyze the strategies and innovations that have made Lykans Realty a trailblazer in the industry.</p>
-                <ul style="text-align: left;">
-                    <li>The role of creativity and innovation in their approach.</li>
-                    <li> Piyush’s leadership style and strategic vision.</li>
-                    <li> What the future holds for Lykans Realty and its clients.</li>
-                </ul>
-                <div class="align">
+                <div class="blog-text">
+                    <span>From Vision to Victory: Lessons from Piyush Bansal’s Entrepreneurial Journey</span>
+                    <a href="#" class="blog-title">Provide an inspiring narrative about Piyush’s entrepreneurial
+                        journey, offering lessons for aspiring
+                        business <br> leaders.</a>
+                    <p>Challenges and successes in building Lykans Realty.
+                        His ventures into finance with Lykans Finance and Marker Finance.
+                        Advice for young entrepreneurs looking to make an impact.</p>
                     <a href="#">Read More</a>
                 </div>
             </div>
         </div>
 
-        <div class="slider-controls">
-            <button class="control" id="prev">&#10094;</button>
-            <button class="control" id="next">&#10095;</button>
-        </div>
-    </div>
+    </section>
+
+
 
     <!-- Contact Start -->
     <div class="container-xxl pb-5" id="contact">
@@ -422,7 +319,8 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="mar">Ready to connect with Piyush Bansal? Whether you're looking for real estate insights, mentorship, or business collaborations, get in touch today.</p>
+                    <p class="mar">Ready to connect with Piyush Bansal? Whether you're looking for real estate insights,
+                        mentorship, or business collaborations, get in touch today.</p>
                     <p class="mb-2">My office: 2106, Prime Tower, Business Bay, Dubai
                     </p>
                     <h3 class="fw-bold"></h3>
@@ -517,6 +415,36 @@
 
 
     <!-- JavaScript Libraries -->
+     <script>
+        function toggleMenu() {
+            let navList = document.querySelector(".nav-list");
+            let hamburger = document.querySelector(".hamburger");
+        
+            // Toggle active class on menu and hamburger icon
+            navList.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        }
+        
+        // Close menu when clicking on a menu item
+        document.querySelectorAll(".nav-list li a").forEach(item => {
+            item.addEventListener("click", () => {
+                document.querySelector(".nav-list").classList.remove("active");
+                document.querySelector(".hamburger").classList.remove("active");
+            });
+        });
+        
+        // Close menu when clicking outside the menu
+        document.addEventListener("click", (event) => {
+            let navbar = document.querySelector(".navbar1");
+            let navList = document.querySelector(".nav-list");
+            let hamburger = document.querySelector(".hamburger");
+        
+            if (!navbar.contains(event.target)) {
+                navList.classList.remove("active");
+                hamburger.classList.remove("active");
+            }
+        });             
+     </script>
     <script src="script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
