@@ -62,60 +62,21 @@
 
     <!-- Header Start -->
     <section class="home">
-        <div class="container-fluid bg-light my-6 mt-0" id="home">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-5">
-                        <img class="img-fluid" src="./img/profile1.JPG" alt="">
-                    </div>
-                    <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                        <h3 class="mb-3">HI, I'm Piyush Bansal</h3>
-                        <h2 class="text-primary typed-text-output d-inline"></h2>
-                        <div class="typed-text d-none">Architect, Entrepreneur, Mentor, Visionary</div>
-                        <p class="mt-2">As a mentor, Piyush has inspired countless individuals, sharing his insights and
-                            empowering others to
-                            excel in their fields. His journey is a source of inspiration for aspiring entrepreneurs and
-                            seasoned
-                            professionals alike.</p>
-                        <div class="d-flex align-items-center pt-5">
-                            <a href="#contact" class="btn btn-primary py-3 px-4 me-5">Contact Us</a>
-                            <button type="button" class="btn-play" data-bs-toggle="modal"
-                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                                <span></span>
-                            </button>
-                            <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Background Video -->
+        <video autoplay muted loop>
+            <source src="./img/ProfileVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Content Over Video -->
+        <div class="home-content">
+            <h3>Piyush Bansal</h3>
+            <h2 class="text-primary typed-text-output d-inline"></h2>
+            <div class="typed-text d-none">Architect, Entrepreneur, Mentor, Visionary, Business Coach</div>
         </div>
     </section>
     <!-- Header End -->
 
-
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                        onclick="stopVideo()"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe id="youtubeVideo" allow="autoplay" width="560" height="315"
-                            src="https://www.youtube.com/embed/v9HxfXiwlOk?si=UPqt1knUEH-L7XsP"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
     <div class="about-section" id="about">
         <div class="about-image">
 
@@ -123,23 +84,96 @@
         <div class="about-content">
             <h2>About Us</h2>
             <p>
-                A visionary entrepreneur reshaping Dubai’s real estate and finance industries,<strong
-                    style="color: #6244C5;"> Piyush Bansal
-                </strong> combines
-                architectural expertise with business acumen to drive innovation and success. His strategic leadership
-                has positioned his ventures among the fastest-growing in the UAE.
+                A visionary powerhouse transforming Dubai’s real estate and finance industries, driving groundbreaking
+                innovation, record-breaking success, and industry-defining excellence. With an unrivaled blend of
+                architectural brilliance, business mastery, and investment foresight, strategic leadership has propelled
+                multiple ventures to the top, setting new benchmarks in luxury, trust, and financial empowerment.
             </p>
             <ul>
-                <li>Co-founder – Lykans Realty | Dubai’s No.1 Seller of DAMAC Properties.</li>
-                <li>Founder – Lykans Associates | Revolutionizing the Property Sector</li>
-                <li>Co-founder – Marker Finance | Leading Innovation in Financial Services</li>
+                <li>Co-founder – Lykans Realty | Setting new benchmarks in luxury real estate, delivering
+                    record-breaking success.</li>
+                <li> Founder – Lykans Associates | Revolutionizing the property sector with game-changing investment
+                    solutions.</li>
+
+                <li>Co-founder – Marker Finance | Redefining financial services with cutting-edge wealth strategies and
+                    disruptive solutions.</li>
             </ul>
-            <p>Recognized by DAMAC Developers and featured in <strong style="color: #6244C5;"> Khaleej Times’ </strong>
-                Top 50 Fastest-Growing Companies in Dubai,
-                Piyush’s relentless ambition and expertise continue to set new industry standards. As a mentor and
-                strategist, he inspires the next generation of entrepreneurs to achieve excellence.</p>
+            <p> <strong>Milestones & Triumphs</strong><br>
+            
+              Recognized by DAMAC Developers for exceptional performance and high-value deals.<br>
+               Featured in Khaleej Times’ Top 50 Fastest-Growing Companies in Dubai.<br>
+               Led multi-million-dollar real estate acquisitions and investment portfolios, driving exponential
+                    growth in the UAE market.<br>
+               Built a business ecosystem that seamlessly integrates real estate, finance, and wealth management,
+                    creating a holistic approach to success.<br>
         </div>
     </div>
+    <section class="Company-Main">
+        <h1 style="text-align: center;">What I Do?</h1>
+        <p style="text-align: center;">We are optimists who love to work together.</p>
+        <div class="company">
+            <div class="carousel">
+                <div class="carousel-container" id="carousel">
+                    <div class="doContainer">
+                        <div class="front-face">
+                            <div class="cover">
+                                <img class="profile" src="./img/vision2.png" alt="company-logo">
+                            </div>
+                            <div class="name">Vision</div>
+                            <div class="tag">To Empower The Next Generation Of Leaders</div>
+                        </div>
+                        <div class="back-face">
+                            <h1>OUR VISION</h1>
+                            <p>To empower the next generation of leaders by creating 101 successful CEOs, building over
+                                1 million homes, and becoming the biggest real estate developer in the UAE — expanding
+                                globally and revolutionizing real estate with AI and cutting-edge technology within the
+                                next decade.</p>
+                        </div>
+                    </div>
+                    <div class="doContainer">
+                        <div class="front-face">
+                            <div class="cover">
+                                <img class="profile" src="./img/goals-removebg-preview.png" alt="company-logo">
+                            </div>
+                            <div class="name">Mission</div>
+                            <div class="tag">We are on a mission to create leaders, not followers.</div>
+                        </div>
+                        <div class="back-face">
+                            <h1>OUR MISSION</h1>
+                            <p>We are on a mission to create leaders, not followers. By guiding 101 aspiring CEOs to
+                                success, we aim to transform the real estate landscape. Our focus is on developing
+                                high-quality housing projects, becoming a market leader in the UAE, and expanding our
+                                footprint globally. Through the power of AI and technology, we will streamline
+                                processes, enhance customer experiences, and drive industry-wide innovation achieving
+                                remarkable growth in just 10 years.</p>
+                        </div>
+                    </div>
+                    <div class="doContainer">
+                        <div class="front-face">
+                            <div class="cover">
+                                <img class="profile" src="./img/joinme-removebg-preview.png" alt="company-logo">
+                            </div>
+                            <div class="name">Join Me</div>
+                            <div class="tag">Let's collaborate</div>
+                        </div>
+                        <div class="back-face">
+                            <h1>Why Join Us?</h1>
+                            <p>Join the movement to redefine real estate globally. As a VC, I provide capital, strategy, and mentorship to scale fast and smart.<br>
+
+                                🔹 Capital & Strategy – Funding + expert insights for rapid growth.<br>
+                                🔹 Direct Mentorship – Learn from real-world success.<br>
+                                🔹 Elite Networking – Connect with top investors & leaders.<br>
+                                
+                                This isn’t just business—it’s a lasting legacy. Be part of the future!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators" id="indicators"></div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- About Start -->
     <div class="container-xxl py-4 mt-3" id="about">
         <div class="container">
@@ -149,21 +183,31 @@
 
                         <h1 class="lh-base mb-0">Mentor & Entrepreneur</h1>
                     </div>
-                    <p class="mb-4">As a mentor, Piyush has inspired countless individuals, sharing his insights and
-                        empowering others to
-                        excel in their fields. His journey is a source of inspiration for aspiring entrepreneurs and
-                        seasoned
-                        professionals alike.<br>
-                        Recognized by DAMAC Developers and featured in <strong style="color: #6244C5;"> Khaleej Times’ </strong>
-                Top 50 Fastest-Growing Companies in Dubai,
-                Piyush’s relentless ambition and expertise continue to set new industry standards.<br> As a mentor and
-                strategist, he inspires the next generation of entrepreneurs to achieve excellence. <br> Beyond real estate, Piyush’s entrepreneurial endeavors include:
+                    <p class="mb-4"><strong>"Success isn’t just about closing deals; it’s about creating leaders who can
+                            transform their own futures."</strong><br>
+
+                        As a visionary mentor and entrepreneur, my goal is to build a community of resilient, confident,
+                        and unstoppable individuals—those who don’t just strive for success but create it. It's about
+                        instilling a mindset that empowers people to rise above challenges, transform their businesses,
+                        and lead with purpose.<br>
+
+                        <strong>What Drives My Community:</strong><br>
+                        -Unbreakable Resilience: Teaching my community to embrace setbacks as opportunities to grow,
+                        adapt, and come back even stronger.<br>
+                        -Entrepreneurial Leadership: Nurturing individuals who not only dream big but take decisive
+                        action to build and scale their own businesses.<br>
+                        -Relationship Mastery: Shifting from transactional to transformational relationships that open
+                        doors for long-term success.<br>
+                        -Relentless Growth: Encouraging constant evolution, adaptability, and pushing the boundaries of
+                        what’s possible in a fast-paced world.<br>
+
+                        <strong>My philosophy is simple: Rise above the ordinary, stay relentless, and create a lasting
+                            legacy
+                            that outlives you.</strong>
                     </p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Lykans Associates</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Marker Finance</p>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3 mb-4">
+                    <div class="row11 g-3 mb-4">
                         <div class="col-sm-6">
                             <img class="img-fluid rounded" src="./img/about-1.png" alt="">
                         </div>
@@ -179,163 +223,85 @@
     <!-- About End -->
     <div class="container23" id="awards">
         <div class="service-wrapper">
-            <div class="service">
+            <div class="">
                 <h1>Our Achievements</h1>
                 <p style="font-size: 20px;">"Turning Visions into Victories: Our Greatest Achievements"</p>
-                <div class="cards">
-                    <div class="card">
-                        <i class="icon bi bi-building"></i>
-                        <h2>Real Estate Leadership</h2>
-                        <p>Co-founder of Lykans Realty, the leading real estate company in Dubai for DAMAC property
-                            sales.</p>
-                    </div>
-                    <div class="card">
-                        <i class="icon bi bi-bar-chart"></i>
-                        <h2>Record-Breaking Growth</h2>
-                        <p>Dubai’s No. 1 Elevated Lykans Realty to become Dubai’s No. 1 real estate firm in DAMAC
-                            property
-                            sales within just 9 months.</p>
-                    </div>
-                    <div class="card">
-                        <i class="icon bi bi-award"></i>
-                        <h2>Industry Recognition</h2>
-                        <p>Khaleej Times Featured in Khaleej Times as one of Dubai’s top 50 fastest-growing companies.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <i class="icon bi bi-house-door"></i>
-                        <h2>Financial Ventures</h2>
-                        <p>Owner and shareholder of Lykans Finance and Marker Finance, driving innovation and trust in
-                            financial services.</p>
-                    </div>
-                    <div class="card">
-                        <i class="icon fa fa-users"></i>
-                        <h2>Mentorship Excellence: </h2>
-                        <p>Renowned mentor and coach, empowering individuals in the real estate and business
-                            sectors.</p>
-                    </div>
-                    <div class="card">
-                        <i class="icon bi bi-building"></i>
-                        <h2>Architectural Expertise</h2>
-                        <p>A foundation in architecture that fuels his creative approach to real estate
-                            development and project design.</p>
+                <div id="card-area">
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img src="./img/achievements1.jpg" alt="">
+                                <h2>Achievements</h2>
+                                <div class="overlay">
+                                    <h3>Achievements</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa magni id,
+                                        officiis
+                                        veniam tempora optio deleniti quia reprehenderit voluptas dolorum dicta facere.
+                                    </p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="./img/award 1.png" alt="">
+                                <div class="overlay">
+                                    <h3>Achievements</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa magni id,
+                                        officiis
+                                        veniam tempora optio deleniti quia reprehenderit voluptas dolorum dicta facere.
+                                    </p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="./img/achievements3.jpg" alt="">
+                                <div class="overlay">
+                                    <h3>Achievements</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa magni id,
+                                        officiis
+                                        veniam tempora optio deleniti quia reprehenderit voluptas dolorum dicta facere.
+                                    </p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="./img/achievements2.jpg" alt="">
+                                <div class="overlay">
+                                    <h3>Achievements</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa magni id,
+                                        officiis
+                                        veniam tempora optio deleniti quia reprehenderit voluptas dolorum dicta facere.
+                                    </p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="./img/achievements4.jpg" alt="">
+                                <div class="overlay">
+                                    <h3>Achievements</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa magni id,
+                                        officiis
+                                        veniam tempora optio deleniti quia reprehenderit voluptas dolorum dicta facere.
+                                    </p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="./img/achievements5.jpg" alt="">
+                                <div class="overlay">
+                                    <h3>Achievements</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa magni id,
+                                        officiis
+                                        veniam tempora optio deleniti quia reprehenderit voluptas dolorum dicta facere.
+                                    </p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <section class="Company-Main">
-        <h1 style="text-align: center;">What I Do?</h1>
-        <p style="text-align: center;">We are optimists who love to work together.</p>
-        <div class="company">
-            <div class="carousel">
-                <div class="carousel-container" id="carousel">
-                    <div class="doContainer">
-                        <div class="front-face">
-                            <div class="cover">
-                                <img class="profile" src="./img/vision2.png" alt="company-logo">
-                            </div>
-                            <div class="name">Vision</div>
-                            <div class="tag">Setting New Standards Of Excellence</div>
-                        </div>
-                        <div class="back-face">
-                            <h1>OUR VISION</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum magnam a
-                                sapiente
-                                nemo, enim
-                                omnis soluta totam quae vero animi iusto libero.</p>
-                        </div>
-                    </div>
-                    <div class="doContainer">
-                        <div class="front-face">
-                            <div class="cover">
-                                <img class="profile" src="./img/goals-removebg-preview.png" alt="company-logo">
-                            </div>
-                            <div class="name">Goals</div>
-                            <div class="tag">Deliver high-quality, impactful solutions.</div>
-                        </div>
-                        <div class="back-face">
-                            <h1>OUR GOALS</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum magnam a
-                                sapiente
-                                nemo, enim
-                                omnis soluta totam quae vero animi iusto libero.</p>
-                           
-                        </div>
-                    </div>
-                    <div class="doContainer">
-                        <div class="front-face">
-                            <div class="cover">
-                                <img class="profile" src="./img/values.png" alt="company-logo">
-                            </div>
-                            <div class="name">Values</div>
-                            <div class="tag">Creativity & Innovation</div>
-                        </div>
-                        <div class="back-face">
-                            <h1>OUR VALUES</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum magnam a
-                                sapiente
-                                nemo, enim
-                                omnis soluta totam quae vero animi iusto libero.</p>
-                           
-                        </div>
-                    </div>
-                    <div class="doContainer">
-                        <div class="front-face">
-                            <div class="cover">
-                                <img class="profile" src="./img/goals-removebg-preview.png" alt="company-logo">
-                            </div>
-                            <div class="name">Mission</div>
-                            <div class="tag">To empower businesses and individuals</div>
-                        </div>
-                        <div class="back-face">
-                            <h1>OUR MISSION</h1>
-                            <p>I empower businesses and individuals with innovative digital solutions that drive growth,
-                                visibility, and long-term success. By combining cutting-edge strategies, creative
-                                execution, and data-driven insights, I help brands establish a powerful digital
-                                presence. My approach focuses on scalability, personalization, and measurable impact,
-                                ensuring every solution is tailored for success. </p>
-                        </div>
-                    </div>
-                    <div class="doContainer">
-                        <div class="front-face">
-                            <div class="cover">
-                                <img class="profile" src="./img/joinme-removebg-preview.png" alt="company-logo">
-                            </div>
-                            <div class="name">Join Me</div>
-                            <div class="tag">Let's collaborate</div>
-                        </div>
-                        <div class="back-face">
-                            <h1>Why Join Us?</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum magnam a
-                                sapiente
-                                nemo, enim
-                                omnis soluta totam quae vero animi iusto libero.</p>
-                        </div>
-                    </div>
-                    <div class="doContainer">
-                        <div class="front-face">
-                            <div class="cover">
-                                <img class="profile" src="./img/achivements-removebg-preview.png" alt="company-logo">
-                            </div>
-                            <div class="name">Achievements</div>
-                            <div class="tag">Recognized as a top performer</div>
-                        </div>
-                        <div class="back-face">
-                            <h1>OUR ACHIVEMENTS</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum magnam a
-                                sapiente
-                                nemo, enim
-                                omnis soluta totam quae vero animi iusto libero.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-indicators" id="indicators"></div>
-            </div>
-        </div>
-    </section>
-
-
 
     <!-- Service End -->
     <section id="work-process" id="project">
@@ -431,9 +397,6 @@
                 <div class="col-lg-6">
                     <h1 class="display-5 mb-0">Let's Work Together</h1>
                 </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
-                </div>
             </div>
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -451,10 +414,8 @@
                     <hr class="w-100">
                     <p class="mb-2">Follow me:</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.instagram.com/piyushbansal21/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/piyush-bansal-046864184/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
