@@ -214,6 +214,44 @@
             </div>
         </div>
     </div>
+    <section class="faqs">
+        <div class="faq-container">
+            <div class="faq-content">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3 class="faq-question">What is this community about?</h3>
+                    <p class="faq-answer">This community is a space for like-minded individuals to share knowledge, network, and grow together.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How can I join?</h3>
+                    <p class="faq-answer">Simply click the "Join Our Community" button and fill in your details. We’ll get in touch with you.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Is there any membership fee?</h3>
+                    <p class="faq-answer">No, joining is completely free! We believe in fostering an inclusive and supportive environment.</p>
+                </div>
+                <button class="join-btn" onclick="openForm()">Join Our Community</button>
+            </div>
+    
+            <div class="faq-image d-lg-block d-none">
+                <img src="./img/community.jpg" alt="Join Our Community">
+            </div>
+        </div>
+    
+        <!-- Popup Form -->
+        <div class="popup-form" id="popupForm">
+            <div class="form-container">
+                <span class="close-btn" onclick="closeForm()">&times;</span>
+                <h2>Join Our Community</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone" required>
+                    <button type="submit">Join Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <!-- About End -->
     <div class="container23" id="awards">
         <div class="service-wrapper">
@@ -489,33 +527,36 @@
 
     <!-- JavaScript Libraries -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const container = document.querySelector(".carousel-container1");
-            const prev = document.querySelector(".prev");
-            const next = document.querySelector(".next");
-            const cardWidth = document.querySelector(".card1").offsetWidth + 20; // Card width + gap
-
-            next.addEventListener("click", function () {
-                container.scrollBy({ left: cardWidth, behavior: "smooth" });
-            });
-
-            prev.addEventListener("click", function () {
-                container.scrollBy({ left: -cardWidth, behavior: "smooth" });
-            });
-
-            // Hover Effect for Bottom Content
-            document.querySelectorAll(".card1").forEach((card) => {
-                card.addEventListener("mouseenter", function () {
-                    let bottom = this.querySelector(".bottom");
-                    bottom.style.display = "block";
-                });
-
-                card.addEventListener("mouseleave", function () {
-                    let bottom = this.querySelector(".bottom");
-                    bottom.style.display = "none";
-                });
+        document.querySelectorAll(".faq-question").forEach((question) => {
+            question.addEventListener("click", function () {
+                let parent = this.parentElement;
+                parent.classList.toggle("active");
+        
+                let answer = this.nextElementSibling;
+                if (parent.classList.contains("active")) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                } else {
+                    answer.style.maxHeight = "0";
+                }
             });
         });
+        
+        // Open Pop-up Form
+        function openForm() {
+            let popup = document.getElementById("popupForm");
+            popup.style.display = "flex";
+        }
+        
+        // Close Pop-up Form with Animation
+        function closeForm() {
+            let popup = document.getElementById("popupForm");
+            popup.style.animation = "fadeOut 0.3s ease-in-out";
+            
+            setTimeout(() => {
+                popup.style.display = "none";
+                popup.style.animation = "fadeIn 0.5s ease-in-out"; // Reset animation
+            }, 300);
+        }
         function toggleMenu() {
             let navList = document.querySelector(".nav-list");
             let hamburger = document.querySelector(".hamburger");
@@ -543,7 +584,33 @@
                 navList.classList.remove("active");
                 hamburger.classList.remove("active");
             }
-        });   
+        });
+        // Open Pop-up Form & Disable Scrolling
+function openForm() {
+    let popup = document.getElementById("popupForm");
+    popup.style.display = "flex";
+    document.body.style.overflow = "hidden"; // Disable scrolling
+}
+
+// Close Pop-up Form & Enable Scrolling
+function closeForm() {
+    let popup = document.getElementById("popupForm");
+    popup.style.animation = "fadeOut 0.3s ease-in-out";
+
+    setTimeout(() => {
+        popup.style.display = "none";
+        popup.style.animation = "fadeIn 0.5s ease-in-out"; // Reset animation
+        document.body.style.overflow = "auto"; // Enable scrolling
+    }, 300);
+}
+
+// Form Submission & Enable Scrolling
+document.querySelector(".form-container form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent actual form submission (optional)
+    closeForm();
+    document.body.style.overflow = "auto"; // Enable scrolling after submit
+});
+
     </script>
     <script src="script.js"></script>
 
