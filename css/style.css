@@ -1031,7 +1031,7 @@ background-blend-mode: multiply;
 .overlay{
   height: 0;
   width: 100%;
-  background:linear-gradient(transparent,#efeded 58%);
+  background:linear-gradient(transparent,#efeded 90%);
   border-radius: 10px;
   position: absolute;
   left: 0;
